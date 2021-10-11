@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 const Hello = ({ data: { microcmsPost } }) => (
   <Layout>
     <Seo title="Hello, microCMS!!" />
-    <h1>{microcmsPost.author}</h1>
+    <h1>ハロー、{microcmsPost.author}</h1>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
