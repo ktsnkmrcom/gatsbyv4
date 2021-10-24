@@ -7,6 +7,7 @@ const Hello = ({ data: { microcmsSong } }) => (
   <Layout>
     <Seo title="Hello, microCMS!!" />
     <h1>ハロー、{microcmsSong.author}</h1>
+    <h2>{microcmsSong.song}</h2>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
@@ -17,6 +18,7 @@ export const query = graphql`
   query {
     microcmsSong {
       author
+      song
     }
   }
 `
